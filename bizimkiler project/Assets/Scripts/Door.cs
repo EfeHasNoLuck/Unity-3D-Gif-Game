@@ -18,7 +18,7 @@ public class door : MonoBehaviour
         if (toggle == true)
         {
             anim.ResetTrigger("close");
-            anim.SetTrigger("true");
+            anim.SetTrigger("open");
         }
     }
 }
