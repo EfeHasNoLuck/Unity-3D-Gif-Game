@@ -13,10 +13,10 @@ public class PlayerRaycast : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit, interactionDistance, layers))
         {
-            if(hit.collider.gameObject.GetComponent<door>())
+            if (hit.collider.gameObject.GetComponent<door>())
             {
                 informationText.SetActive(true);
-                if(Input.GetKeyDown(KeyCode.E))
+                if (Input.GetKeyDown(KeyCode.E))
                 {
                     hit.collider.gameObject.GetComponent<door>().openClose();
                 }
@@ -26,6 +26,9 @@ public class PlayerRaycast : MonoBehaviour
                 informationText.SetActive(false);
             }
         }
-        informationText.SetActive(false);
+        else
+        {
+            informationText.SetActive(false);
+        }
     }
 }
