@@ -8,7 +8,6 @@ public class GateOpen : MonoBehaviour
 {
     bool a = false;
     bool b = false;
-    bool c = false;
     bool work = true;
     int value = 0;
     public GameObject Gate;
