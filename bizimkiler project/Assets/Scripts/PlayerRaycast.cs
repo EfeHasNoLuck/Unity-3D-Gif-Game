@@ -19,9 +19,10 @@ public class PlayerRaycast : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     hit.collider.gameObject.GetComponent<door>().openClose();
+                    Debug.Log("31");
                 }
             }
-            else if ((hit.collider.gameObject.GetComponent<Book>()))
+            else if (hit.collider.gameObject.GetComponent<Book>())
             {
                 informationText.SetActive(true);
                 if (Input.GetKeyDown(KeyCode.E))

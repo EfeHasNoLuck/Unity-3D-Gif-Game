@@ -12,11 +12,13 @@ public class door : MonoBehaviour
         toggle = !toggle;
         if (toggle == false)
         {
+            Debug.Log("selam");
             anim.ResetTrigger("open");
             anim.SetTrigger("close");
         }
         if (toggle == true)
         {
+            Debug.Log("nasilsin");
             anim.ResetTrigger("close");
             anim.SetTrigger("open");
         }
