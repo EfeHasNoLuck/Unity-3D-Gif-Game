@@ -21,9 +21,16 @@ public class GateOpen : MonoBehaviour
 
         if (a && b && value == 0 && work)
         {
-            cutcontrol.SetActive(true);
-            work = false;
+            StartCoroutine(Cutscene());
         }
+    }
+
+    IEnumerator Cutscene()
+    {
+        work = false;
+        cutcontrol.SetActive(true);
+        yield return new WaitForSeconds(13f);
+        cutcontrol.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
