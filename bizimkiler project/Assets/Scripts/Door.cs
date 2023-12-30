@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class door : MonoBehaviour
 {
+    [SerializeField] private AudioSource doorOpenAudioSource = null;
+    [SerializeField] private float openDelay = 0f;
+    [SerializeField] private AudioSource doorClosedAudioSource = null;
+    [SerializeField] private float closeDelay = 0f;
+
+
     bool toggle;
     public Animator anim;
 
@@ -12,15 +18,15 @@ public class door : MonoBehaviour
         toggle = !toggle;
         if (toggle == false)
         {
-            Debug.Log("selam");
             anim.ResetTrigger("open");
             anim.SetTrigger("close");
+            doorClosedAudioSource.PlayDelayed(closeDelay);
         }
         if (toggle == true)
         {
-            Debug.Log("nasilsin");
             anim.ResetTrigger("close");
             anim.SetTrigger("open");
+            doorOpenAudioSource.PlayDelayed(openDelay);
         }
     }
 }

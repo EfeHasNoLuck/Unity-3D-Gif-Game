@@ -9,6 +9,9 @@ TagManager:
   - a
   - b
   - c
+  - Grass
+  - Metal
+  - Wood
   layers:
   - Default
   - TransparentFX

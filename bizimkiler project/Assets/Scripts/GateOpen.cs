@@ -29,7 +29,7 @@ public class GateOpen : MonoBehaviour
     {
         work = false;
         cutcontrol.SetActive(true);
-        yield return new WaitForSeconds(13f);
+        yield return new WaitForSeconds(26f);
         cutcontrol.SetActive(false);
     }
 
