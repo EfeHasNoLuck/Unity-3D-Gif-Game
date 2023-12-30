@@ -7,6 +7,9 @@ using UnityEngine;
 public class GateOpen : MonoBehaviour
 {
     public GameObject cutcontrol;
+    public GameObject player;
+    public GameObject canvas;
+    
     bool a = false;
     bool b = false;
     bool work = true;
@@ -29,9 +32,14 @@ public class GateOpen : MonoBehaviour
     {
         work = false;
         cutcontrol.SetActive(true);
+        player.SetActive(false);
+        canvas.SetActive(false);
         yield return new WaitForSeconds(26f);
         cutcontrol.SetActive(false);
+        player.SetActive(true);
+        canvas.SetActive(true);
     }
+
 
     private void OnTriggerEnter(Collider other)
     {

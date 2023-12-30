@@ -5641,6 +5641,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 400176553}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &407100265 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2043343684605417479, guid: e4c45d4cc355e714084315627c40cd55, type: 3}
+  m_PrefabInstance: {fileID: 5949828655226527315}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &415739870
 GameObject:
   m_ObjectHideFlags: 0
@@ -6042,6 +6047,11 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &444362112 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5261651271782969533, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
+  m_PrefabInstance: {fileID: 1710985365660287511}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &456718873
 GameObject:
   m_ObjectHideFlags: 0
@@ -8200,6 +8210,8 @@ PlayableDirector:
     value: {fileID: 905572742}
   - key: {fileID: 2501722565918774551, guid: 21390ba6e85ff524b87212b678b57f13, type: 2}
     value: {fileID: 1812721871}
+  - key: {fileID: 2503514943948530159, guid: 21390ba6e85ff524b87212b678b57f13, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &663518218
@@ -19458,6 +19470,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cutcontrol: {fileID: 663518216}
+  player: {fileID: 444362112}
+  canvas: {fileID: 407100265}
 --- !u!65 &1645989589
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24600,6 +24614,10 @@ PrefabInstance:
     - target: {fileID: 2043343684605417479, guid: e4c45d4cc355e714084315627c40cd55, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2043343684605417479, guid: e4c45d4cc355e714084315627c40cd55, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
