@@ -6,11 +6,12 @@ using UnityEngine;
 
 public class GateOpen : MonoBehaviour
 {
+    public GameObject cutcontrol;
     bool a = false;
     bool b = false;
     bool work = true;
     int value = 0;
-    public GameObject Gate;
+    //public GameObject Gate;
 
     void Update()
     {
@@ -20,7 +21,7 @@ public class GateOpen : MonoBehaviour
 
         if (a && b && value == 0 && work)
         {
-            Destroy(Gate);
+            cutcontrol.SetActive(true);
             work = false;
         }
     }
