@@ -9,6 +9,16 @@ public class PlayerMovement : MonoBehaviour
     
     AudioSource source;
     public AudioClip[] stepsounds;
+    public AudioClip[] woodsounds;
+    public AudioClip[] grasssounds;
+
+    int soundControl;
+
+    // 0 = Default
+
+    // 1 = Grass
+
+    // 2 = Wood
 
     public float speed = 20f;
     public float gravity = -9.81f;
@@ -29,6 +39,23 @@ public class PlayerMovement : MonoBehaviour
     {
         source = GetComponent<AudioSource>();
     }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        switch (hit.transform.tag)
+        {
+            case "Metal":
+                soundControl = 0;
+                break;
+            case "Wood":
+                soundControl = 1;
+                break;
+            case "Grass":
+                soundControl = 2;
+                break;
+        }
+    }
+
 
     void Update()
     {
@@ -74,14 +101,19 @@ public class PlayerMovement : MonoBehaviour
         {
             timer -= Time.deltaTime;
 
-            if(timer < 0)
+            if(timer <= 0)
             {
+                switch(soundControl)
+                {
+                    case 0: source.clip = stepsounds[Random.Range(0, stepsounds.Length)]; break;
+                    case 1: source.clip = woodsounds[Random.Range(0, woodsounds.Length)]; break;
+                    case 2: source.clip = grasssounds[Random.Range(0, grasssounds.Length)]; break;
+                }
+
+
+                //source.clip = stepsounds[Random.Range(0, stepsounds.Length)];
                 timer = timeBetweenSteps;
-                
-                source.clip = stepsounds[Random.Range(0, stepsounds.Length)];
-                
                 source.Play();
-                Debug.Log("selam");
             }
         }
         else

@@ -9,6 +9,10 @@ TagManager:
   - a
   - b
   - c
+  - Grass
+  - Metal
+  - Wood
+  - Enemy
   layers:
   - Default
   - TransparentFX
