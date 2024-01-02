@@ -29,6 +29,9 @@ public class EnemyAI : MonoBehaviour
     {
         Vector3 direction = (player.position - transform.position).normalized;
         RaycastHit hit;
+
+        Debug.DrawRay(transform.position + rayCastOffset, direction * sightDistance, Color.red);
+
         if (Physics.Raycast(transform.position + rayCastOffset, direction, out hit, sightDistance))
         {
             if (hit.collider.gameObject.tag == "Player")

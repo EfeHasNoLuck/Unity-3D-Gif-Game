@@ -329,7 +329,7 @@ GameObject:
   - component: {fileID: 137335085}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Enemy
+  m_TagString: aa
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -464,7 +464,7 @@ Transform:
   m_GameObject: {fileID: 137335084}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.61, y: 4.843, z: -28.96659}
+  m_LocalPosition: {x: 10.19, y: 3.51, z: -6.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3861,6 +3861,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: First Person Player 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5261651271782969533, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 6564734474197283245, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.050000723
@@ -4985,9 +4989,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1693434857}
-  - component: {fileID: 1693434856}
-  - component: {fileID: 1693434855}
   - component: {fileID: 1693434854}
+  - component: {fileID: 1693434859}
+  - component: {fileID: 1693434858}
   m_Layer: 0
   m_Name: Snowman
   m_TagString: Untagged
@@ -5016,48 +5020,30 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1693434855
-MonoBehaviour:
+--- !u!4 &1693434857
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1693434853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1ad5b3220130994897748d3e81fa6ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ai: {fileID: 1693434856}
-  destinations:
-  - {fileID: 571893818}
-  - {fileID: 785140567}
-  - {fileID: 1333990922}
-  - {fileID: 1035956255}
-  - {fileID: 240140487}
-  - {fileID: 129811014}
-  - {fileID: 1148638992}
-  - {fileID: 728962560}
-  - {fileID: 1713241876}
-  aiAnim: {fileID: 1693434854}
-  walkSpeed: 2
-  chaseSpeed: 6
-  minIdleTime: 2
-  maxIdleTime: 9
-  idleTime: 0
-  sightDistance: 15
-  catchDistance: 3
-  chaseTime: 0
-  minChaseTime: 10
-  maxChaseTime: 25
-  jumpscareTime: 2
-  walking: 0
-  chasing: 0
-  player: {fileID: 484520875}
-  destinationAmount: 11
-  rayCastOffset: {x: 90, y: 0, z: 0}
-  deathScene: Castle
---- !u!195 &1693434856
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 8.07, y: 2.13, z: -8.39}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 787728132}
+  - {fileID: 1961171032}
+  - {fileID: 560989575}
+  - {fileID: 1954363229}
+  - {fileID: 1855402369}
+  - {fileID: 2144459236}
+  - {fileID: 856400432}
+  - {fileID: 1289236234}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!195 &1693434858
 NavMeshAgent:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5075,33 +5061,51 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 2.3
+  m_Height: 2
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!4 &1693434857
-Transform:
+--- !u!114 &1693434859
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1693434853}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 8.07, y: 2.46, z: -8.39}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 787728132}
-  - {fileID: 1961171032}
-  - {fileID: 560989575}
-  - {fileID: 1954363229}
-  - {fileID: 1855402369}
-  - {fileID: 2144459236}
-  - {fileID: 856400432}
-  - {fileID: 1289236234}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ad5b3220130994897748d3e81fa6ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ai: {fileID: 1693434858}
+  destinations:
+  - {fileID: 571893818}
+  - {fileID: 785140567}
+  - {fileID: 1333990922}
+  - {fileID: 1035956255}
+  - {fileID: 240140487}
+  - {fileID: 129811014}
+  - {fileID: 1148638992}
+  - {fileID: 728962560}
+  - {fileID: 1713241876}
+  aiAnim: {fileID: 1693434854}
+  walkSpeed: 3
+  chaseSpeed: 6
+  minIdleTime: 2
+  maxIdleTime: 4
+  idleTime: 0
+  sightDistance: 15
+  catchDistance: 3
+  chaseTime: 0
+  minChaseTime: 10
+  maxChaseTime: 15
+  jumpscareTime: 2
+  walking: 0
+  chasing: 0
+  player: {fileID: 484520875}
+  destinationAmount: 0
+  rayCastOffset: {x: 0, y: 0, z: 0}
+  deathScene: Castle
 --- !u!1 &1713241875
 GameObject:
   m_ObjectHideFlags: 0
