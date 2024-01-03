@@ -12,7 +12,8 @@ public class CollisionDetection : MonoBehaviour
     {
         if (other.tag == "Enemy" && wc.isAttacking) 
         {
-            other.GetComponent<Animator>().SetTrigger("Hit");
+            Debug.Log("selamaaa");
+            //other.GetComponent<Animator>().SetTrigger("Hit");
             //Instantiate(HitParticle, new Vector3(other.transform.position.x, transform.position.y, other.transform.position.z),other.transform.rotation);
         }
     }
