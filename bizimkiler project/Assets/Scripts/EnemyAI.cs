@@ -1,4 +1,3 @@
-using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -30,7 +29,7 @@ public class EnemyAI : MonoBehaviour
         currentDest = destinations[randNum];
     }
     void Update()
-    {
+    { 
         Vector3 direction = (player.position - transform.position).normalized;
         RaycastHit hit;
 
@@ -92,14 +91,12 @@ public class EnemyAI : MonoBehaviour
     {
         if (other.tag == "sword")
         {
-            // Trigger death animation and start death routine
             aiAnim.ResetTrigger("walk");
             aiAnim.ResetTrigger("idle");
             aiAnim.ResetTrigger("sprint");
             aiAnim.SetTrigger("dead");
 
             StartCoroutine("lastdeath");
-            // Start the death routine
 
         }
     }
