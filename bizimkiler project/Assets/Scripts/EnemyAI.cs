@@ -29,7 +29,8 @@ public class EnemyAI : MonoBehaviour
         currentDest = destinations[randNum];
     }
     void Update()
-    { 
+    {
+        Debug.Log(a);
         Vector3 direction = (player.position - transform.position).normalized;
         RaycastHit hit;
 
