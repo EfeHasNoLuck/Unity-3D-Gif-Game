@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class door : MonoBehaviour
 {
+    [SerializeField] private GameObject rail = null;
+    [SerializeField] private GameObject rail1 = null;
     [SerializeField] private AudioSource doorOpenAudioSource = null;
     [SerializeField] private float openDelay = 0f;
     [SerializeField] private AudioSource doorClosedAudioSource = null;
     [SerializeField] private float closeDelay = 0f;
+    [SerializeField] private AudioSource locksound = null;
 
 
     bool toggle;
@@ -28,5 +31,11 @@ public class door : MonoBehaviour
             anim.SetTrigger("open");
             doorOpenAudioSource.PlayDelayed(openDelay);
         }
+    }
+    public void locked()
+    {
+        locksound.PlayDelayed(0f);
+        Destroy(rail);
+        Destroy(rail1);
     }
 }

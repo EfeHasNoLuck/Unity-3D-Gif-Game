@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Castle.unity
     guid: 226c3ee5d2a463e44951357edcee9312
+  - enabled: 1
+    path: Assets/Scenes/labrynt.unity
+    guid: c80a0aca500dad546a821e77c27abd5e
   m_configObjects: {}

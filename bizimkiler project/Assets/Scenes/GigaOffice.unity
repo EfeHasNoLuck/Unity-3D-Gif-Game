@@ -12467,7 +12467,7 @@ Transform:
   m_GameObject: {fileID: 970126421}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -40.0072, y: -41.32, z: 14.2925}
+  m_LocalPosition: {x: -40.0072, y: -41.36, z: 14.2925}
   m_LocalScale: {x: 10.268172, y: 9.058244, z: 0.70662004}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14593,10 +14593,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f478932464664654eb843e3133a5feba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rail: {fileID: 0}
+  rail1: {fileID: 0}
   doorOpenAudioSource: {fileID: 1936997070}
   openDelay: 0
   doorClosedAudioSource: {fileID: 1120864832}
   closeDelay: 0.8
+  locksound: {fileID: 0}
   anim: {fileID: 2040577462}
 --- !u!65 &1210780644
 BoxCollider:
@@ -21621,6 +21624,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1829711870}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1831910109 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6351958055826816500, guid: e4c45d4cc355e714084315627c40cd55, type: 3}
+  m_PrefabInstance: {fileID: 5949828655226527315}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1846064802
 GameObject:
   m_ObjectHideFlags: 0
@@ -24454,6 +24462,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3791271863960426657, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
+      propertyPath: lockinfo
+      value: 
+      objectReference: {fileID: 1831910109}
+    - target: {fileID: 3791271863960426657, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
       propertyPath: informationText
       value: 
       objectReference: {fileID: 277213010}
@@ -24474,6 +24486,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214768928}
     m_Modifications:
+    - target: {fileID: 723012691751266614, guid: 3830b34debab16b48a65abdc21480c6b, type: 3}
+      propertyPath: a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5302003824123307725, guid: 3830b34debab16b48a65abdc21480c6b, type: 3}
       propertyPath: m_Name
       value: Portal

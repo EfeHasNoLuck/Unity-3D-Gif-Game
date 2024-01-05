@@ -5,8 +5,10 @@ using UnityEngine;
 public class PlayerRaycast : MonoBehaviour
 {
     public GameObject informationText;
+    public GameObject lockinfo;
     public float interactionDistance;
     public LayerMask layers;
+    public bool isLocked = false;
 
     void Update()
     {
@@ -16,9 +18,21 @@ public class PlayerRaycast : MonoBehaviour
             if (hit.collider.gameObject.GetComponent<door>())
             {
                 informationText.SetActive(true);
-                if (Input.GetKeyDown(KeyCode.E))
+                if (!isLocked)
                 {
-                    hit.collider.gameObject.GetComponent<door>().openClose();
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        hit.collider.gameObject.GetComponent<door>().openClose();
+                    }
+                }
+                else if (isLocked)
+                {
+                    //  lockinfo.SetActive(true);
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        lockinfo.SetActive(true);
+                        hit.collider.gameObject.GetComponent<door>().locked();
+                    }
                 }
             }
             else if (hit.collider.gameObject.GetComponent<Book>())
@@ -31,11 +45,13 @@ public class PlayerRaycast : MonoBehaviour
             }
             else
             {
+                lockinfo.SetActive(false);
                 informationText.SetActive(false);
             }
         }
         else
         {
+            lockinfo.SetActive(false);
             informationText.SetActive(false);
         }
     }

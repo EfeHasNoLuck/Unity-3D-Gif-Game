@@ -30,7 +30,6 @@ public class EnemyAI : MonoBehaviour
     }
     void Update()
     {
-        Debug.Log(a);
         Vector3 direction = (player.position - transform.position).normalized;
         RaycastHit hit;
 

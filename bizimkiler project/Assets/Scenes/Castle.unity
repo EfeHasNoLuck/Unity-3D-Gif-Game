@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 3c74a6842843fe248915a513ecd06b2d, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -197,6 +197,14 @@ PrefabInstance:
     - target: {fileID: 2863684042009211049, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
       propertyPath: m_Name
       value: TorchLowPoly (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 1.06447715e+24
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 4.208329e+30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -377,6 +385,22 @@ PrefabInstance:
     - target: {fileID: 2863684042009211049, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
       propertyPath: m_Name
       value: TorchLowPoly (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 1.0478e-41
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 1.02e-43
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 6e-44
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 1.16e-43
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -716,6 +740,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: TorchLowPoly (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 1.6258945e+25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 2.611069e+20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 1.5274592e+28
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 7.036672e+22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -929,6 +969,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: TorchLowPoly (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 8.3e-44
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 7.92e-43
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 2.426717e-38
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 7.92e-43
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1073,6 +1129,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: TorchLowPoly (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 3.989242e-36
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 1.02e-43
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 2.21e-43
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 5.949e-42
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1142,6 +1214,18 @@ PrefabInstance:
     - target: {fileID: 2863684042009211049, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
       propertyPath: m_Name
       value: TorchLowPoly (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 1.02e-43
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 3.4e-44
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 4.379e-42
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1222,6 +1306,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6d08b71d0d306c4bb31f80a0e885be6, type: 3}
+--- !u!1 &543135684 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6351958055826816500, guid: e4c45d4cc355e714084315627c40cd55, type: 3}
+  m_PrefabInstance: {fileID: 1713411918}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &571893817
 GameObject:
   m_ObjectHideFlags: 0
@@ -1614,6 +1703,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: TorchLowPoly (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 4.721e-42
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 4.5904e-41
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 6e-44
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 2.5e-44
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1689,7 +1794,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 609f69f3443a9b9489f4eaeb012c7571, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.18327
+      value: 0.13
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 609f69f3443a9b9489f4eaeb012c7571, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1697,7 +1802,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 609f69f3443a9b9489f4eaeb012c7571, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.2652
+      value: 1.07
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 609f69f3443a9b9489f4eaeb012c7571, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1761,9 +1866,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 609f69f3443a9b9489f4eaeb012c7571, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1549282189}
-    - targetCorrespondingSourceObject: {fileID: 100000, guid: 609f69f3443a9b9489f4eaeb012c7571, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1549282190}
   m_SourcePrefab: {fileID: 100100000, guid: 609f69f3443a9b9489f4eaeb012c7571, type: 3}
 --- !u!4 &808479506 stripped
 Transform:
@@ -1897,6 +1999,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 484520875}
+    - target: {fileID: 2558575019021416243, guid: 0401134797899bb4c8ee5a7fdcc9d8d9, type: 3}
+      propertyPath: catchDistance
+      value: 2.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2558575019021416243, guid: 0401134797899bb4c8ee5a7fdcc9d8d9, type: 3}
       propertyPath: destinations.Array.data[0]
       value: 
@@ -2156,7 +2262,7 @@ GameObject:
   - component: {fileID: 876133896}
   - component: {fileID: 876133895}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: glass col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2406,6 +2512,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: TorchLowPoly (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_Lightmapping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 4.8439816e-37
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2580,7 +2702,7 @@ GameObject:
   - component: {fileID: 1017079556}
   - component: {fileID: 1017079555}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: glass col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2731,6 +2853,18 @@ PrefabInstance:
     - target: {fileID: 2863684042009211049, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
       propertyPath: m_Name
       value: TorchLowPoly (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 2.07345e-40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: -8.920859e+9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 7.93e-43
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3014,6 +3148,16 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3830b34debab16b48a65abdc21480c6b, type: 3}
+--- !u!1 &1127636270 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5261651271782969533, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
+  m_PrefabInstance: {fileID: 1258701891}
+  m_PrefabAsset: {fileID: 0}
+--- !u!143 &1127636273 stripped
+CharacterController:
+  m_CorrespondingSourceObject: {fileID: 2770021061616260561, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
+  m_PrefabInstance: {fileID: 1258701891}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1148357307
 GameObject:
   m_ObjectHideFlags: 0
@@ -3197,6 +3341,14 @@ PrefabInstance:
     - target: {fileID: 2863684042009211049, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
       propertyPath: m_Name
       value: TorchLowPoly (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 2.2e-44
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 2.4435958e-30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3540,6 +3692,10 @@ PrefabInstance:
       propertyPath: m_Volume
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 1626431767438373453, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2472874565336180144, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
       propertyPath: gravity
       value: -40
@@ -3558,19 +3714,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2947601204916229852, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.49
+      value: -3.82
       objectReference: {fileID: 0}
     - target: {fileID: 2947601204916229852, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 53.03
+      value: 4.19
       objectReference: {fileID: 0}
     - target: {fileID: 2947601204916229852, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 242
+      value: 228.1
       objectReference: {fileID: 0}
     - target: {fileID: 2947601204916229852, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.995712
+      value: -0.059031107
       objectReference: {fileID: 0}
     - target: {fileID: 2947601204916229852, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
       propertyPath: m_LocalRotation.x
@@ -3578,7 +3734,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2947601204916229852, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.09250804
+      value: -0.9982562
       objectReference: {fileID: 0}
     - target: {fileID: 2947601204916229852, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
       propertyPath: m_LocalRotation.z
@@ -3590,12 +3746,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2947601204916229852, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 349.384
+      value: 533.232
       objectReference: {fileID: 0}
     - target: {fileID: 2947601204916229852, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3791271863960426657, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
+      propertyPath: lockinfo
+      value: 
+      objectReference: {fileID: 543135684}
     - target: {fileID: 3791271863960426657, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
       propertyPath: informationText
       value: 
@@ -3674,7 +3834,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8147db1cba5d256438e470066c63270d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.15
+  m_Volume: 0.13
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -4327,27 +4487,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wc: {fileID: 1178461910}
---- !u!65 &1549282190
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1549282184}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 32.833164, y: 492.42758, z: 5.614754}
-  m_Center: {x: 15.416204, y: -14.041812, z: 1.8072929}
 --- !u!1001 &1595808049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4819,6 +4958,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: TorchLowPoly (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 3.587e-42
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 1.02e-43
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 3.4e-44
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 5.133e-42
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5140,6 +5295,18 @@ PrefabInstance:
     - target: {fileID: 2863684042009211049, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
       propertyPath: m_Name
       value: TorchLowPoly (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 1.0478e-41
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 6e-44
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 1.04e-43
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5529,6 +5696,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 0890fc82feff73447ae5833573cacbc5, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0890fc82feff73447ae5833573cacbc5, type: 3}
+      propertyPath: m_TagString
+      value: Metal
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 0890fc82feff73447ae5833573cacbc5, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -6593,6 +6764,14 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!33 &5142415289629521225
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5302003824440235353}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &5213568872152180971
 GameObject:
   m_ObjectHideFlags: 0
@@ -6607,6 +6786,26 @@ GameObject:
   - component: {fileID: 9009676508923231128}
   m_Layer: 0
   m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &5302003824440235353
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6565961983001341518}
+  - component: {fileID: 5142415289629521225}
+  - component: {fileID: 7110259452704951322}
+  - component: {fileID: 6863178355709926298}
+  - component: {fileID: 7110259452704951323}
+  m_Layer: 0
+  m_Name: door enter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6843,10 +7042,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f478932464664654eb843e3133a5feba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rail: {fileID: 0}
+  rail1: {fileID: 0}
   doorOpenAudioSource: {fileID: 1745448850}
   openDelay: 0
   doorClosedAudioSource: {fileID: 863772445}
   closeDelay: 0.8
+  locksound: {fileID: 0}
   anim: {fileID: 8296172668802121057}
 --- !u!23 &6341295222592365101
 MeshRenderer:
@@ -6890,6 +7092,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!4 &6565961983001341518
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5302003824440235353}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.3897, y: 5.3684, z: 233.89}
+  m_LocalScale: {x: 5.603469, y: 6.4442687, z: 0.010056378}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &6706713845601299985
 Animator:
   serializedVersion: 5
@@ -6932,6 +7149,83 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &6863178355709926298
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5302003824440235353}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &7110259452704951322
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5302003824440235353}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 3cae60b37936bd74f93676c001f56ce9, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7110259452704951323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5302003824440235353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43837f55783dfca4793504ec9703bf73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterController: {fileID: 1127636273}
+  character: {fileID: 1127636270}
 --- !u!4 &7120221711136656834
 Transform:
   m_ObjectHideFlags: 0
@@ -7046,6 +7340,18 @@ PrefabInstance:
     - target: {fileID: 2863684042009211049, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
       propertyPath: m_Name
       value: TorchLowPoly (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 1.02e-43
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 6.2e-44
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745619290792411577, guid: 80066bcabd1ca9e4583c60ac19500b5b, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 4.954e-42
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7232,10 +7538,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f478932464664654eb843e3133a5feba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rail: {fileID: 0}
+  rail1: {fileID: 0}
   doorOpenAudioSource: {fileID: 1745448850}
   openDelay: 0
   doorClosedAudioSource: {fileID: 863772445}
   closeDelay: 0.8
+  locksound: {fileID: 0}
   anim: {fileID: 8296172668802121057}
 --- !u!4 &9186137586975692563
 Transform:
@@ -7267,3 +7576,4 @@ SceneRoots:
   - {fileID: 362667588}
   - {fileID: 811841496}
   - {fileID: 7120221711136656834}
+  - {fileID: 6565961983001341518}
