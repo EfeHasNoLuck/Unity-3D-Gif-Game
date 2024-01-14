@@ -25078,9 +25078,17 @@ PrefabInstance:
       propertyPath: informationText
       value: 
       objectReference: {fileID: 277213010}
+    - target: {fileID: 4415570172667036469, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
+      propertyPath: field of view
+      value: 68
+      objectReference: {fileID: 0}
     - target: {fileID: 5261651271782969533, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
       propertyPath: m_Name
       value: First Person Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836043829737299989, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
+      propertyPath: mouseSensivity
+      value: 200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
