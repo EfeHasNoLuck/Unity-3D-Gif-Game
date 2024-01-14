@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: "Assets/Scenes/\u0130ntro.unity"
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
+    path: Assets/Scenes/Graveyard.unity
+    guid: 748d83e40ad63124d88dff3a9e92559f
+  - enabled: 1
     path: Assets/Scenes/GigaOffice.unity
     guid: add88b700d64a104a8e5fd45f1104e07
   - enabled: 1
