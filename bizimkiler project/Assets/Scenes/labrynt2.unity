@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 0
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
@@ -35,10 +35,10 @@ RenderSettings:
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
-  m_ReflectionIntensity: 1
+  m_ReflectionIntensity: 0
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 0}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -780,6 +780,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 595926321}
     - target: {fileID: 3791271863960426657, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
+      propertyPath: backinfo
+      value: 
+      objectReference: {fileID: 178655243}
+    - target: {fileID: 3791271863960426657, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
       propertyPath: isLocked
       value: 1
       objectReference: {fileID: 0}
@@ -860,6 +864,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
+--- !u!1 &178655243 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6943779705401356099, guid: e4c45d4cc355e714084315627c40cd55, type: 3}
+  m_PrefabInstance: {fileID: 595926319}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &277785950
 GameObject:
   m_ObjectHideFlags: 0
@@ -982,7 +991,7 @@ GameObject:
   - component: {fileID: 321259448}
   m_Layer: 0
   m_Name: gate_p1
-  m_TagString: door
+  m_TagString: locking
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -996,8 +1005,8 @@ Transform:
   m_GameObject: {fileID: 321259446}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.271, y: 0, z: 0.034}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.275, y: 0, z: 0.06}
+  m_LocalScale: {x: 0.98867, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 23732940}
@@ -2848,7 +2857,7 @@ GameObject:
   - component: {fileID: 1231979037}
   m_Layer: 0
   m_Name: gate_p2
-  m_TagString: door2
+  m_TagString: locking
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2862,8 +2871,8 @@ Transform:
   m_GameObject: {fileID: 1231979035}
   serializedVersion: 2
   m_LocalRotation: {x: 7.993606e-15, y: -0, z: -8.881784e-16, w: 1}
-  m_LocalPosition: {x: -0.276, y: -0, z: 0.016}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.277, y: -0, z: -0.01}
+  m_LocalScale: {x: 0.99492645, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 391596100}

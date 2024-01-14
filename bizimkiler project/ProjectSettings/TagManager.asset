@@ -17,6 +17,7 @@ TagManager:
   - sword
   - door2
   - door
+  - locking
   layers:
   - Default
   - TransparentFX

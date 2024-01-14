@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: ecf218e94d8c3ee49896d4d444c8daa1, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -231,6 +231,11 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &33140496 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6943779705401356099, guid: e4c45d4cc355e714084315627c40cd55, type: 3}
+  m_PrefabInstance: {fileID: 5949828655226527315}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &36202029
 GameObject:
   m_ObjectHideFlags: 0
@@ -14561,7 +14566,7 @@ GameObject:
   - component: {fileID: 1210780647}
   m_Layer: 0
   m_Name: door
-  m_TagString: Untagged
+  m_TagString: door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14593,7 +14598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f478932464664654eb843e3133a5feba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rail: {fileID: 0}
+  rail: {fileID: 444362112}
   rail1: {fileID: 0}
   doorOpenAudioSource: {fileID: 1936997070}
   openDelay: 0
@@ -24421,6 +24426,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2472874565336180144, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
+      propertyPath: gravity
+      value: -39.24
+      objectReference: {fileID: 0}
     - target: {fileID: 2947601204916229852, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.049
@@ -24461,6 +24470,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3791271863960426657, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
+      propertyPath: backinfo
+      value: 
+      objectReference: {fileID: 33140496}
     - target: {fileID: 3791271863960426657, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
       propertyPath: lockinfo
       value: 
