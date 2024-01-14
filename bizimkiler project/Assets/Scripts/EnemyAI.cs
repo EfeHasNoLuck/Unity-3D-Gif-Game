@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class EnemyAI : MonoBehaviour
 {
-
     public NavMeshAgent ai;
     public List<Transform> destinations;
     public Animator aiAnim;
@@ -68,6 +67,7 @@ public class EnemyAI : MonoBehaviour
         }
         if (walking == true && a)
         {
+          //  sea.Play();
             dest = currentDest.position;
             ai.destination = dest;
             ai.speed = walkSpeed;
