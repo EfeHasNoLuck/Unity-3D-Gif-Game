@@ -254,7 +254,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: He made a wow with himsel at the funeral of his death wife and kid
+  m_Text: 'He made a wov with himself at his wife and daughter''s funeral... '
 --- !u!222 &277710719
 CanvasRenderer:
   m_ObjectHideFlags: 0
