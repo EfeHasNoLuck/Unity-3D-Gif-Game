@@ -725,6 +725,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 329067042}
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
+--- !u!4 &249622280 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2947601204916229852, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
+  m_PrefabInstance: {fileID: 1360709247}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &302645060 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400008, guid: 7f9e65acf41e9bc4aa4196e7318e5972, type: 3}
@@ -3781,6 +3786,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3791271863960426657, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
+      propertyPath: YOKimg
+      value: 
+      objectReference: {fileID: 1692896468}
+    - target: {fileID: 3791271863960426657, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
       propertyPath: estring
       value: 
       objectReference: {fileID: 412141515}
@@ -3804,6 +3813,10 @@ PrefabInstance:
       propertyPath: lockedInfo
       value: 
       objectReference: {fileID: 2039316428}
+    - target: {fileID: 3791271863960426657, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
+      propertyPath: audiosource
+      value: 
+      objectReference: {fileID: 1696597350}
     - target: {fileID: 3791271863960426657, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
       propertyPath: informationText
       value: 
@@ -3866,7 +3879,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2947601204916229852, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 1696597349}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4299202cf2614e4439d0c3843bf6fea3, type: 3}
 --- !u!1 &1400118020
@@ -4533,12 +4549,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1696597348}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: -0.7730079, z: -0, w: -0.63439643}
+  m_LocalPosition: {x: 3.6102693, y: 1.3417007, z: 15.037169}
+  m_LocalScale: {x: 0.55670154, y: 8.31238, z: 5.5771294}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2068801681}
+  m_Father: {fileID: 249622280}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1696597350
 AudioSource:
@@ -4550,7 +4566,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 79f2f7f6472a7aa4ab531e273003732a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -5835,7 +5851,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &2068801680
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5869,8 +5885,7 @@ Transform:
   m_LocalPosition: {x: 0.8, y: 3.5625544, z: -19.115}
   m_LocalScale: {x: 0.16039, y: 2.3948603, z: 1.6068139}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1696597349}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2068801682
@@ -5880,13 +5895,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068801679}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bae0f6ae301e6b04192d9c487e1903a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   YOKimg: {fileID: 1692896468}
-  audiosource: {fileID: 0}
+  audiosource: {fileID: 1696597350}
 --- !u!1 &2123859960
 GameObject:
   m_ObjectHideFlags: 0

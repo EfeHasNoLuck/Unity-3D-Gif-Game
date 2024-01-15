@@ -11,7 +11,7 @@ public class door : MonoBehaviour
     [SerializeField] private AudioSource doorClosedAudioSource = null;
     [SerializeField] private float closeDelay = 0f;
     [SerializeField] private AudioSource locksound = null;
-
+    
 
     bool toggle;
     public Animator anim;
@@ -38,4 +38,5 @@ public class door : MonoBehaviour
         Destroy(rail);
         Destroy(rail1);
     }
+   
 }

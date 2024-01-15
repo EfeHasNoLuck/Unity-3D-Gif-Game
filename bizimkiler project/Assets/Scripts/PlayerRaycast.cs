@@ -11,6 +11,13 @@ public class PlayerRaycast : MonoBehaviour
     public float interactionDistance;
     public LayerMask layers;
     public static bool isLocked = true;
+    public GameObject YOKimg;
+    public AudioSource audiosource;
+
+    void Start()
+    {
+        YOKimg.SetActive(false);
+    }
 
     void Update()
     {
@@ -45,6 +52,9 @@ public class PlayerRaycast : MonoBehaviour
                     {
                         lockinfo.SetActive(true);
                         hit.collider.gameObject.GetComponent<door>().locked();
+                        YOKimg.SetActive(true);
+                        audiosource.Play();
+                        StartCoroutine(DisableImg());
                     }
                 }
             }
@@ -79,5 +89,12 @@ public class PlayerRaycast : MonoBehaviour
             informationText.SetActive(false);
         }
     }
-    
+    IEnumerator DisableImg()
+    {
+        Debug.Log("a");
+        yield return new WaitForSeconds(5);
+        YOKimg.SetActive(false);
+
+    }
+
 }

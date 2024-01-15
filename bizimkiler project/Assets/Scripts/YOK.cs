@@ -23,14 +23,15 @@ public class YOK : MonoBehaviour
             Debug.Log("a");
             YOKimg.SetActive(true);
             audiosource.Play();
-            StartCoroutine(Disableimg());
+            StartCoroutine(DisableImg());
         }
      
     }
 
-     IEnumerator Disableimg()
+     IEnumerator DisableImg()
     {
-        yield return new WaitForSeconds(2);
+        Debug.Log("a");
+        yield return new WaitForSeconds(5);
         YOKimg.SetActive(false);
 
     }
