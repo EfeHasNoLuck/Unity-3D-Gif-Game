@@ -8,4 +8,11 @@ public class Bullet : MonoBehaviour
     {
         Destroy(gameObject, life);
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "bossy")
+        {
+            destroyer.hp--;
+        }
+    }
 }

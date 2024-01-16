@@ -18,6 +18,7 @@ TagManager:
   - door2
   - door
   - locking
+  - bossy
   layers:
   - Default
   - TransparentFX

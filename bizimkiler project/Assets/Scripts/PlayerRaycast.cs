@@ -21,7 +21,6 @@ public class PlayerRaycast : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(isLocked);
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit, interactionDistance, layers))
         {

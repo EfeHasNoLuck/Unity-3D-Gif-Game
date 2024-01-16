@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class door : MonoBehaviour
 {
+    [SerializeField] private GameObject songy = null;
     [SerializeField] private GameObject rail = null;
     [SerializeField] private GameObject rail1 = null;
     [SerializeField] private AudioSource doorOpenAudioSource = null;
@@ -18,6 +19,11 @@ public class door : MonoBehaviour
 
     public void openClose()
     {
+        if(songy != null) 
+        {
+            songy.SetActive(false);
+        }
+
         toggle = !toggle;
         if (toggle == false)
         {
