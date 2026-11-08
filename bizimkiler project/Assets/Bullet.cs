@@ -10,7 +10,7 @@ public class Bullet : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "bossy")
+        if (other.CompareTag("bossy"))
         {
             destroyer.hp--;
         }

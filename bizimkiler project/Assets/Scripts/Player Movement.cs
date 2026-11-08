@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Threading;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -13,12 +10,6 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip[] grasssounds;
 
     int soundControl;
-
-    // 0 = Default
-
-    // 1 = Grass
-
-    // 2 = Wood
 
     public float speed = 20f;
     public float gravity = -9.81f;
@@ -42,17 +33,17 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        switch (hit.transform.tag)
+        if (hit.transform.CompareTag("Metal"))
         {
-            case "Metal":
-                soundControl = 0;
-                break;
-            case "Wood":
-                soundControl = 1;
-                break;
-            case "Grass":
-                soundControl = 2;
-                break;
+            soundControl = 0;
+        }
+        else if (hit.transform.CompareTag("Wood"))
+        {
+            soundControl = 1;
+        }
+        else if (hit.transform.CompareTag("Grass"))
+        {
+            soundControl = 2;
         }
     }
 
@@ -111,7 +102,6 @@ public class PlayerMovement : MonoBehaviour
                 }
 
 
-                //source.clip = stepsounds[Random.Range(0, stepsounds.Length)];
                 timer = timeBetweenSteps;
                 source.Play();
             }

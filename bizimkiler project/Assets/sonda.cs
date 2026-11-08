@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class sonda : MonoBehaviour
@@ -10,7 +9,7 @@ public class sonda : MonoBehaviour
 
  void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
             video.SetActive(true);
             StartCoroutine(dakkabekle());

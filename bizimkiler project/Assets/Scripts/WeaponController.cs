@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class WeaponController : MonoBehaviour
@@ -9,6 +8,15 @@ public class WeaponController : MonoBehaviour
     public float AttackCooldown = 1f;
     public AudioClip SwordAttackSound;
     public bool isAttacking = false;
+
+    private AudioSource attackAudioSource;
+    private GameObject cachedSword;
+    private Animator swordAnimator;
+
+    void Awake()
+    {
+        attackAudioSource = GetComponent<AudioSource>();
+    }
 
     void Update()
     {
@@ -26,10 +34,17 @@ public class WeaponController : MonoBehaviour
     {
         isAttacking = true;
         CanAttack = false;
-        Animator anim = Sword.GetComponent<Animator>();
-        anim.SetTrigger("Attack");
-        AudioSource ac = GetComponent<AudioSource>();
-        ac.PlayOneShot(SwordAttackSound);
+        if (cachedSword != Sword || swordAnimator == null)
+        {
+            cachedSword = Sword;
+            swordAnimator = Sword.GetComponent<Animator>();
+        }
+        swordAnimator.SetTrigger("Attack");
+        if (attackAudioSource == null)
+        {
+            attackAudioSource = GetComponent<AudioSource>();
+        }
+        attackAudioSource.PlayOneShot(SwordAttackSound);
         StartCoroutine(ResetAttackCooldown());
     }
 

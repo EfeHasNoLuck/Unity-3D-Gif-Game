@@ -1,7 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class GateOpen : MonoBehaviour
@@ -14,14 +11,9 @@ public class GateOpen : MonoBehaviour
     bool b = false;
     bool work = true;
     int value = 0;
-    //public GameObject Gate;
 
     void Update()
     {
-        // Debug.Log(value);
-        // Debug.Log(a);
-        // Debug.Log(b);
-
         if (a && b && value == 0 && work)
         {
             StartCoroutine(Cutscene());
@@ -43,15 +35,15 @@ public class GateOpen : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "a")
+        if (other.CompareTag("a"))
         {
             a = true;
         }
-        if (other.gameObject.tag == "b")
+        if (other.CompareTag("b"))
         {
             b = true;
         }
-        if (other.gameObject.tag == "c")
+        if (other.CompareTag("c"))
         {
             value = value + 1;
         }
@@ -61,29 +53,17 @@ public class GateOpen : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "a")
+        if (other.CompareTag("a"))
         {
             a = false;
         }
-        if (other.gameObject.tag == "b")
+        if (other.CompareTag("b"))
         {
             b = false;
         }
-        if (other.gameObject.tag == "c")
+        if (other.CompareTag("c"))
         {
             value = value - 1;
         }
     }
-
-
-        
-
-    /*      private void OnTriggerStay(Collider other)
-          {
-              if (other.gameObject.tag == "a")
-              {
-                  Debug.Log("staying");
-              }
-          }
-    */
 }

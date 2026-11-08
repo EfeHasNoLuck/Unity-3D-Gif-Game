@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class WeaponSwitching : MonoBehaviour
@@ -14,15 +12,16 @@ public class WeaponSwitching : MonoBehaviour
     void Update()
     {
         int previousSelectedWeapon = selectedWeapon;
+        float scroll = Input.GetAxis("Mouse ScrollWheel");
 
-        if (Input.GetAxis("Mouse ScrollWheel") > 0f)
+        if (scroll > 0f)
         {
             if (selectedWeapon >= transform.childCount - 1)
                 selectedWeapon = 0;
             else
                 selectedWeapon++;
         }
-        if (Input.GetAxis("Mouse ScrollWheel") < 0f)
+        if (scroll < 0f)
         {
             if (selectedWeapon <= 0)
                 selectedWeapon = transform.childCount -1;
@@ -49,14 +48,13 @@ public class WeaponSwitching : MonoBehaviour
 
     void SelectWeapon()
     {
-        int i = 0;
-        foreach (Transform weapon in transform)
+        for (int i = 0; i < transform.childCount; i++)
         {
+            Transform weapon = transform.GetChild(i);
             if (i == selectedWeapon)
                 weapon.gameObject.SetActive(true);
             else
                 weapon.gameObject.SetActive(false);
-            i++;
         }
     }
 }

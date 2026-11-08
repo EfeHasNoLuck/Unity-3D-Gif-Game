@@ -36,7 +36,7 @@ public class EnemyAI : MonoBehaviour
 
         if (Physics.Raycast(transform.position + rayCastOffset, direction, out hit, sightDistance))
         {
-            if (hit.collider.gameObject.tag == "Player" && a)
+            if (hit.collider.CompareTag("Player") && a)
             {
                 walking = false;
                 StopCoroutine("stayIdle");
@@ -67,7 +67,6 @@ public class EnemyAI : MonoBehaviour
         }
         if (walking == true && a)
         {
-          //  sea.Play();
             dest = currentDest.position;
             ai.destination = dest;
             ai.speed = walkSpeed;
@@ -89,7 +88,7 @@ public class EnemyAI : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "sword")
+        if (other.CompareTag("sword"))
         {
             aiAnim.ResetTrigger("walk");
             aiAnim.ResetTrigger("idle");

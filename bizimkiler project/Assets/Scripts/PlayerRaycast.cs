@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -24,49 +23,48 @@ public class PlayerRaycast : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit, interactionDistance, layers))
         {
-            if (hit.collider.gameObject.tag == "door")
+            if (hit.collider.CompareTag("door"))
             {
                 informationText.SetActive(true);
                 {
                     if (Input.GetKeyDown(KeyCode.E))
                     {
-                        hit.collider.gameObject.GetComponent<door>().openClose();
+                        hit.collider.GetComponent<door>().openClose();
                     }
                 }
             }
-            else if (hit.collider.gameObject.tag == "locking")
+            else if (hit.collider.CompareTag("locking"))
             {
                 informationText.SetActive(true);
                 if (!isLocked)
                 {
                     if (Input.GetKeyDown(KeyCode.E))
                     {
-                        hit.collider.gameObject.GetComponent<door>().openClose();
+                        hit.collider.GetComponent<door>().openClose();
                     }
                 }
                 else if (isLocked)
                 {
-                    //  lockinfo.SetActive(true);
                     if (Input.GetKeyDown(KeyCode.E))
                     {
                         lockinfo.SetActive(true);
-                        hit.collider.gameObject.GetComponent<door>().locked();
+                        hit.collider.GetComponent<door>().locked();
                         YOKimg.SetActive(true);
                         audiosource.Play();
                         StartCoroutine(DisableImg());
                     }
                 }
             }
-            else if (hit.collider.gameObject.GetComponent<Book>())
+            else if (hit.collider.TryGetComponent(out Book book))
             {
 
                 informationText.SetActive(true);
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    hit.collider.gameObject.GetComponent<Book>().openClose();
+                    book.openClose();
                 }
             }
-            else if (hit.collider.gameObject.GetComponent<Back>())
+            else if (hit.collider.TryGetComponent<Back>(out _))
             {
                 backinfo.SetActive(true);
                 if (Input.GetKeyDown(KeyCode.E))
@@ -90,7 +88,6 @@ public class PlayerRaycast : MonoBehaviour
     }
     IEnumerator DisableImg()
     {
-        Debug.Log("a");
         yield return new WaitForSeconds(5);
         YOKimg.SetActive(false);
 

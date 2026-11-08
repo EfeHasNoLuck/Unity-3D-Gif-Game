@@ -1,7 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class YOK : MonoBehaviour
 {
@@ -18,9 +16,8 @@ public class YOK : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.CompareTag("Player"))
         {
-            Debug.Log("a");
             YOKimg.SetActive(true);
             audiosource.Play();
             StartCoroutine(DisableImg());
@@ -30,7 +27,6 @@ public class YOK : MonoBehaviour
 
      IEnumerator DisableImg()
     {
-        Debug.Log("a");
         yield return new WaitForSeconds(5);
         YOKimg.SetActive(false);
 
